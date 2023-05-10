@@ -21,11 +21,11 @@ public class MainInterface {
     ArrayList<Service> selectedServices = new ArrayList<Service>();
     static ArrayList<String> email = new ArrayList<String>();
 
-    static String Admin = "Admin";
-    static String Worker = "Worker";
-    static String Customer = "Customer";
-    static String Secretary = "Secretary";
-    static String Welcome = "\t\t\tWelcome ";
+    static String admin = "Admin";
+    static String worker = "Worker";
+    static String customer = "Customer";
+    static String secretary = "Secretary";
+    static String welcome = "\t\t\tWelcome ";
     static String separate = "================================================================================";
     static String separate2 = "------------------------------------";
     static String Done = "Done!\n";
@@ -37,11 +37,11 @@ public class MainInterface {
     static String timeString = "   Time: ";
 
     public static void init() {
-        users.add(new Admin("Ahmad", "ahmad123","0595642327","Tulkrem", Admin));
-        users.add(new Worker("qasem", "qasem123","0595642328","Nubles", Worker));
-        users.add(new Customer("anas", "anas123","0595642329","Jenin", Customer));
-        users.add(new Customer("sami", "sami123","0595642324","Ramallah", Customer));
-        users.add(new Secretary("sara", "sara123","0595642325","Gaza", Secretary));
+        users.add(new Admin("Ahmad", "ahmad123","0595642327","Tulkrem", admin));
+        users.add(new Worker("qasem", "qasem123","0595642328","Nubles", worker));
+        users.add(new Customer("anas", "anas123","0595642329","Jenin", customer));
+        users.add(new Customer("sami", "sami123","0595642324","Ramallah", customer));
+        users.add(new Secretary("sara", "sara123","0595642325","Gaza", secretary));
 
         Customer customer = (Customer)users.get(2);
         recorded.addOrder(new Order("05", "01", "2023", "11 ","wating"), customer);
@@ -95,13 +95,13 @@ public class MainInterface {
             userIndex = authenticateUser();
 
             if (userIndex != -1) {
-                if (users.get(userIndex).checkRole(Admin))
+                if (users.get(userIndex).checkRole(admin))
                     adminActivities();
-                else if (users.get(userIndex).checkRole(Worker))
+                else if (users.get(userIndex).checkRole(worker))
                     workerActivities();
-                else if (users.get(userIndex).checkRole(Customer))
+                else if (users.get(userIndex).checkRole(customer))
                     customerActivities();
-                else if (users.get(userIndex).checkRole(Secretary))
+                else if (users.get(userIndex).checkRole(secretary))
                     secretaryActivities();
             }
 
@@ -125,7 +125,7 @@ public class MainInterface {
             String newPhone;
             String newAddress;
             String emaill;
-            logger.log(Level.INFO,Welcome + users.get(userIndex).userName+"\n");
+            logger.log(Level.INFO, welcome + users.get(userIndex).userName+"\n");
             logger.log(Level.INFO,separate2+"\n");
             logger.log(Level.INFO,"1. Add User");
             logger.log(Level.INFO,"2. Remove User");
@@ -151,13 +151,13 @@ public class MainInterface {
 
                     logger.log(Level.INFO,"Enter Role:\n");
                     newRole = scan.nextLine();
-                    if (newRole.equalsIgnoreCase(Admin))
+                    if (newRole.equalsIgnoreCase(admin))
                         users.add(new Admin(newUserName, newPassword,newPhone,newAddress, newRole));
-                    else if (newRole.equalsIgnoreCase(Worker))
+                    else if (newRole.equalsIgnoreCase(worker))
                         users.add(new Worker(newUserName, newPassword,newPhone,newAddress, newRole));
-                    else if (newRole.equalsIgnoreCase(Customer))
+                    else if (newRole.equalsIgnoreCase(customer))
                         users.add(new Customer(newUserName, newPassword,newPhone,newAddress, newRole));
-                    else if (newRole.equalsIgnoreCase(Secretary))
+                    else if (newRole.equalsIgnoreCase(secretary))
                         users.add(new Secretary(newUserName, newPassword,newPhone,newAddress, newRole));
                     logger.log(Level.INFO,Done);
                     break;
@@ -365,7 +365,7 @@ public class MainInterface {
             Customer customer = (Customer)users.get(userIndex);
             ArrayList<Integer> appIndex = new ArrayList<>();
 
-            logger.log(Level.INFO,Welcome + users.get(userIndex).userName+"\n");
+            logger.log(Level.INFO, welcome + users.get(userIndex).userName+"\n");
             logger.log(Level.INFO,separate+"\n");
             logger.log(Level.INFO,"1. Add a Service"+"\n");
             logger.log(Level.INFO,"2. Show Services"+"\n");
@@ -578,7 +578,7 @@ public class MainInterface {
             int numOfVisits = 0;
             Report report = new Report();
 
-            logger.log(Level.INFO,Welcome + users.get(userIndex).userName);
+            logger.log(Level.INFO, welcome + users.get(userIndex).userName);
             scan.nextLine();
             logger.log(Level.INFO,separate);
             scan.nextLine();
