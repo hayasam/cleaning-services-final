@@ -28,7 +28,7 @@ public class MainInterface {
     static String welcome = "\t\t\tWelcome ";
     static String separate = "================================================================================";
     static String separate2 = "------------------------------------";
-    static String Done = "Done!\n";
+    static String done = "Done!\n";
     static String selectOption = "\nPlease select an option:";
     static String logOut = "Logged Out...\n";
     static String invalid = "Invalid selection! Please try again...";
@@ -124,7 +124,7 @@ public class MainInterface {
             String newRole;
             String newPhone;
             String newAddress;
-            String emaill;
+            String email;
             logger.log(Level.INFO, welcome + users.get(userIndex).userName+"\n");
             logger.log(Level.INFO,separate2+"\n");
             logger.log(Level.INFO,"1. Add User");
@@ -159,7 +159,7 @@ public class MainInterface {
                         users.add(new Customer(newUserName, newPassword,newPhone,newAddress, newRole));
                     else if (newRole.equalsIgnoreCase(secretary))
                         users.add(new Secretary(newUserName, newPassword,newPhone,newAddress, newRole));
-                    logger.log(Level.INFO,Done);
+                    logger.log(Level.INFO, done);
                     break;
 
                 case 2:
@@ -182,7 +182,7 @@ public class MainInterface {
                     users.remove(index);
 
 
-                    logger.log(Level.INFO,Done);
+                    logger.log(Level.INFO, done);
                     break;
 
                 case 3:
@@ -198,11 +198,11 @@ public class MainInterface {
                     break;
 
                 case 4:
-                   email.add(0,"");
+                   MainInterface.email.add(0,"");
 
                     logger.log(Level.INFO,"Please write you email here :");
-                    emaill = scan.next();
-                    		email.add(0,emaill);
+                    email = scan.next();
+                    		MainInterface.email.add(0,email);
 
                     break;
                 case 5:
@@ -402,7 +402,7 @@ public class MainInterface {
                         servicesList.get(index).removeQuantity();
                         customer.getSelectedServices().add(servicesList.get(index));
 
-                        logger.log(Level.INFO,Done+"\n");
+                        logger.log(Level.INFO, done +"\n");
                     }
                     else
                     logger.log(Level.INFO,"This service is not available!\n"+"\n");
