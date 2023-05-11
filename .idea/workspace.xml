@@ -7,19 +7,6 @@
     <list default="true" id="209daf62-714a-403c-ae7f-dee4fbe5f6c9" name="Changes" comment="sonar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/MainInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/MainInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Record.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Report.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Secretary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Secretary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/email$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/email$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/email.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/email.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,40 +75,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowGit.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmdq/IdeaProjects/Cleaning-services-master/cleaning-services-final&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/ahmdq/IdeaProjects/rstG/src/test/java/Test1.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowGit.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "C:/Users/ahmdq/IdeaProjects/Cleaning-services-master/cleaning-services-final",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "two.files.diff.last.used.file": "C:/Users/ahmdq/IdeaProjects/rstG/src/test/java/Test1.java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app" />
@@ -297,6 +284,7 @@
       <workItem from="1683752508531" duration="1561000" />
       <workItem from="1683759655055" duration="7000" />
       <workItem from="1683815511647" duration="1380000" />
+      <workItem from="1683816911122" duration="1463000" />
     </task>
     <task id="LOCAL؜-٠٠٠٠١" summary="test">
       <created>1677948720062</created>
