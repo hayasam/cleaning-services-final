@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="209daf62-714a-403c-ae7f-dee4fbe5f6c9" name="Changes" comment="sonar" />
+    <list default="true" id="209daf62-714a-403c-ae7f-dee4fbe5f6c9" name="Changes" comment="sonar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/MainInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/Tester.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\ahmdq\IdeaProjects\Cleaning-services-master\cleaning-services-final\htmlReport" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +69,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2LbCqik2v9Bdjs0UaqjlnNp4Zrv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -90,7 +97,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "configurable.group.editor",
@@ -125,28 +132,97 @@
     <configuration name="MainInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.MainInterface" />
       <module name="Cleaning-services" />
-      <extension name="coverage">
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="test-classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
         <pattern>
           <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Services" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Services.feature" />
-      <option name="GLUE" value="app" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Cleaning-services" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Services" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="app.AddOrdertest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Admin" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Customer" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.deleteOrdertest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.EditOrdertest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.email" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.email" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Invoice" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Invoice" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.MainInterface" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Order" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Reportetest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Servicestest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.SignIntest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.SignOuttest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Tester" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.Visitedtest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.AddOrdertest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="test-classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,14 +230,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: addOrder" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="All Features in: cleaning-services-final" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/addOrder.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$" />
       <option name="GLUE" value="app" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Cleaning-services" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: addOrder" />
+      <option name="SUGGESTED_NAME" value="All Features in: cleaning-services-final" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -189,6 +265,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Cleaning-services" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cleaning-services" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,18 +309,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MainInterface" />
-      <item itemvalue="Cucumber Java.Feature: Services" />
-      <item itemvalue="Cucumber Java.Feature: addOrder" />
+      <item itemvalue="Cucumber Java.All Features in: cleaning-services-final" />
       <item itemvalue="Cucumber Java.Scenario: Discount" />
       <item itemvalue="JUnit.Tester" />
+      <item itemvalue="JUnit.All in Cleaning-services" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainInterface" />
-        <item itemvalue="Cucumber Java.Scenario: Discount" />
-        <item itemvalue="Cucumber Java.Feature: Services" />
-        <item itemvalue="Cucumber Java.Feature: addOrder" />
+        <item itemvalue="JUnit.All in Cleaning-services" />
         <item itemvalue="JUnit.Tester" />
+        <item itemvalue="Cucumber Java.All Features in: cleaning-services-final" />
+        <item itemvalue="Cucumber Java.Scenario: Discount" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +367,8 @@
       <workItem from="1683752508531" duration="1561000" />
       <workItem from="1683759655055" duration="7000" />
       <workItem from="1683815511647" duration="1380000" />
-      <workItem from="1683816911122" duration="2042000" />
+      <workItem from="1683816911122" duration="13472000" />
+      <workItem from="1683906251084" duration="2158000" />
     </task>
     <task id="LOCAL؜-٠٠٠٠١" summary="test">
       <created>1677948720062</created>
@@ -553,7 +640,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Ahmad-branch" />
+                        <option value="Ahmad-branch" />
                       </list>
                     </value>
                   </entry>
@@ -611,6 +698,35 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Cleaning_services_Ahmad_branch$Feature__addOrder.ic" NAME="Feature: addOrder Coverage Results" MODIFIED="1681643861656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cleaning_services_final$MainInterface.exec" NAME="MainInterface Coverage Results" MODIFIED="1683830370295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test-classes.*</FILTER>
+      <FILTER>app.*</FILTER>
+      <FILTER>app.AddOrdertest</FILTER>
+      <FILTER>app.Admin</FILTER>
+      <FILTER>app.Customer</FILTER>
+      <FILTER>app.deleteOrdertest</FILTER>
+      <FILTER>app.EditOrdertest</FILTER>
+      <FILTER>app.email</FILTER>
+      <FILTER>app.email</FILTER>
+      <FILTER>app.Invoice</FILTER>
+      <FILTER>app.Invoice</FILTER>
+      <FILTER>app.MainInterface</FILTER>
+      <FILTER>app.Order</FILTER>
+      <FILTER>app.Reportetest</FILTER>
+      <FILTER>app.Servicestest</FILTER>
+      <FILTER>app.SignIntest</FILTER>
+      <FILTER>app.SignOuttest</FILTER>
+      <FILTER>app.Tester</FILTER>
+      <FILTER>app.Visitedtest</FILTER>
+      <FILTER>app.AddOrdertest</FILTER>
+      <FILTER>test-classes.*</FILTER>
+      <FILTER>app.*</FILTER>
+      <FILTER>*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cleaning_services_final$All_in_Cleaning_services.ic" NAME="All in Cleaning-services Coverage Results" MODIFIED="1683906872204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/cleaning_services_final$Tester.ic" NAME="Tester Coverage Results" MODIFIED="1683906851256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.*</FILTER>
     </SUITE>
   </component>
 </project>

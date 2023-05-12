@@ -5,9 +5,14 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:addOrder.feature",
-                plugin = "html:target/cucumber/wikipedia.html"
+@CucumberOptions(features = "resources",
+                plugin = {"summary","html:target/cucumber/wikipedia.html"},
+                monochrome = true,
+                snippets = CucumberOptions.SnippetType.CAMELCASE,
+                glue = {"test-classes.app"}
+
 )
 public class Tester {
 
 }
+

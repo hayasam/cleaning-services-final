@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertTrue;
 
-public class Reporttest {
+public class Reportetest {
     String day, month, year, time;
     Customer customer;
     Secretary secretary;
@@ -18,18 +18,18 @@ public class Reporttest {
 
     ArrayList<Service> servicesList = new ArrayList<Service>();
 
-    public Reporttest() {
+    public Reportetest() {
         customer = new Customer("anas", "anas123","0595642329","Jenin", "Customer");
         customer.signIn("anas", "anas123");
         secretary = new Secretary("sara", "sara123","0595642325","Gaza","Secretary");
         secretary.signIn("sara", "sara123");
-        record.addOrder(new Order("05", "01", "2023", "11","wating"), customer);
-        record.addOrder(new Order("02", "05", "2023", "9","intreatment"), customer);
-        record.addOrder(new Order("14", "05", "2023", "3","intreatment"), customer);
+        record.addOrder(new Order("05", "01", "2023", "11","waiting"), customer);
+        record.addOrder(new Order("02", "05", "2023", "9","treatment"), customer);
+        record.addOrder(new Order("14", "05", "2023", "3","treatment"), customer);
 
-        record.addVisit(new Order("05", "01", "2023", "11","wating"));
-        record.addVisit(new Order("02", "05", "2023", "9","wating"));
-        record.addVisit(new Order("14", "05", "2023", "3","wating"));
+        record.addVisit(new Order("05", "01", "2023", "11","waiting"));
+        record.addVisit(new Order("02", "05", "2023", "9","waiting"));
+        record.addVisit(new Order("14", "05", "2023", "3","waiting"));
 
         servicesList.add(new Service("Cleaning carpets", 50, 250.00,"9 m2 ","silk"));
         servicesList.add(new Service("Cleaning covers", 0, 50.00,"3 m2 ","cotton"));

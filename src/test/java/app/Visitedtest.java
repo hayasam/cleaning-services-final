@@ -3,7 +3,7 @@ import io.cucumber.java.en.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class Visittest {
+public class Visitedtest {
 
     Secretary secretary;
     Customer customer;
@@ -11,7 +11,7 @@ public class Visittest {
     Record record = new Record();
     int index;
 
-    public Visittest() {
+    public Visitedtest() {
         worker = new Worker("qasem", "qasem123","0595642328","Nubles", "Worker");
         worker.signIn("qasem", "qasem123");
         customer = new Customer("anas", "anas123","0595642329","Jenin", "Customer");
@@ -54,7 +54,7 @@ public class Visittest {
     @Then("an Order will be recorded")
     public void an_order_will_be_recorded() {
         if (worker.isAvailable())
-            record.addOrder(new Order("14", "05", "2023", "3" ,"intreatment"), customer);
+            record.addOrder(new Order("14", "05", "2023", "3" ,"treatment"), customer);
     }
 
 }
