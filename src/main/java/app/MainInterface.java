@@ -8,7 +8,7 @@ import java.util.logging.*;
 
 public class MainInterface {
     static Logger logger = Logger.getLogger(MainInterface.class.getName());
-    private static final String action1 = "Wating";
+    private static final String ACTION_1 = "Wating";
 
 
     static int userIndex;
@@ -46,9 +46,9 @@ public class MainInterface {
         users.add(new Secretary("sara", "sara123","0595642325","Gaza", secretary));
 
         Customer customer = (Customer)users.get(2);
-        recorded.addOrder(new Order("05", "01", "2023", "11 ",action1), customer);
+        recorded.addOrder(new Order("05", "01", "2023", "11 ", ACTION_1), customer);
         customer = (Customer)users.get(3);
-        recorded.addOrder(new Order("14", "05", "2023", "3 ",action1), customer);
+        recorded.addOrder(new Order("14", "05", "2023", "3 ", ACTION_1), customer);
 
         recorded.addOrder(new Order("02", "05", "2023", "9 ","intreatment"), customer);
         recorded.addOrder(new Order("25", "05", "2023", "3 ","Done"), customer);
@@ -426,7 +426,7 @@ public class MainInterface {
                     String year = scan.next();
                     logger.log(Level.INFO,"Choose Time:"+"\n");
                     String time = scan.next();
-                    String status =action1;
+                    String status = ACTION_1;
                     boolean validOrder = recorded.addOrder(new Order(day, month, year, time,status), customer);
                     if (validOrder)
 
@@ -467,7 +467,7 @@ public class MainInterface {
                     String newYear = scan.next();
                     logger.log(Level.INFO,"Choose New Time:"+"\n");
                     String newTime = scan.next();
-                    String statuss=action1;
+                    String statuss= ACTION_1;
                     validOrder = recorded.editOrder(recorded.getOrders().get(index), new Order(newDay, newMonth, newYear, newTime,statuss));
 
                     if (validOrder)
