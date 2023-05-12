@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="209daf62-714a-403c-ae7f-dee4fbe5f6c9" name="Changes" comment="sonar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/MainInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/app/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +127,7 @@
       <recent name="app" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainInterface">
+  <component name="RunManager" selected="JUnit.Tester">
     <configuration name="MainInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.MainInterface" />
       <module name="Cleaning-services" />
@@ -316,10 +315,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainInterface" />
-        <item itemvalue="JUnit.All in Cleaning-services" />
         <item itemvalue="JUnit.Tester" />
         <item itemvalue="Cucumber Java.All Features in: cleaning-services-final" />
+        <item itemvalue="JUnit.All in Cleaning-services" />
+        <item itemvalue="Application.MainInterface" />
         <item itemvalue="Cucumber Java.Scenario: Discount" />
       </list>
     </recent_temporary>
@@ -368,7 +367,7 @@
       <workItem from="1683759655055" duration="7000" />
       <workItem from="1683815511647" duration="1380000" />
       <workItem from="1683816911122" duration="13472000" />
-      <workItem from="1683906251084" duration="2158000" />
+      <workItem from="1683906251084" duration="597000" />
     </task>
     <task id="LOCAL؜-٠٠٠٠١" summary="test">
       <created>1677948720062</created>
@@ -723,10 +722,6 @@
       <FILTER>test-classes.*</FILTER>
       <FILTER>app.*</FILTER>
       <FILTER>*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/cleaning_services_final$All_in_Cleaning_services.ic" NAME="All in Cleaning-services Coverage Results" MODIFIED="1683906872204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/cleaning_services_final$Tester.ic" NAME="Tester Coverage Results" MODIFIED="1683906851256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>app.*</FILTER>
     </SUITE>
   </component>
 </project>
