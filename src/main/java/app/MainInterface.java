@@ -9,6 +9,7 @@ import java.util.logging.*;
 public class MainInterface {
     static Logger logger = Logger.getLogger(MainInterface.class.getName());
     private static final String ACTION_1 = "Wating";
+    private static final String ACTION_2 ="Please select an order:";
 
 
     static int userIndex;
@@ -323,7 +324,7 @@ public class MainInterface {
                     }
 
 
-                    logger.log(Level.INFO,"\nPlease select an order:");
+                    logger.log(Level.INFO,"\n",ACTION_2);
                     index = scan.nextInt();
                     if (index > i || index < 1) {
 
@@ -450,7 +451,7 @@ public class MainInterface {
                     }
 
 
-                    logger.log(Level.INFO,"\nPlease select an order:"+"\n");
+                    logger.log(Level.INFO,"\n",ACTION_2);
                     index = scan.nextInt();
                     if (index > i || index < 1) {
                         logger.log(Level.INFO,invalid+"\n");
@@ -494,7 +495,7 @@ public class MainInterface {
                     }
 
 
-                    logger.log(Level.INFO,"\nPlease select an order:"+"\n");
+                    logger.log(Level.INFO,"\n",ACTION_2);
                     index = scan.nextInt();
                     if (index > i || index < 1) {
                         logger.log(Level.INFO,invalid+"\n");
