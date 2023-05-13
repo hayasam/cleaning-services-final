@@ -68,12 +68,10 @@ public class email {
             Transport.send(message);
 
             logger.log(Level.INFO, "Sent message successfully....");
-        } catch (AddressException e) {
-            throw new RuntimeException(e);
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
         }
 
-
+        catch (MessagingException mex) {
+            // handle the exception
+       }
     }
 }
