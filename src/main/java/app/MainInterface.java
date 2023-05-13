@@ -83,16 +83,15 @@ public class MainInterface {
 
         while (true) {
 
-            logger.log(Level.INFO,"Enter Username:");
+            logger.log(Level.INFO, "Enter Username:");
             userName = scan.nextLine();
 
             if (userName.equalsIgnoreCase("exit"))
                 System.exit(0);
 
 
-            logger.log(Level.INFO,"\nEnter Password:");
+            logger.log(Level.INFO, "\nEnter Password:");
             password = scan.nextLine();
-
 
 
             userIndex = authenticateUser();
@@ -108,12 +107,13 @@ public class MainInterface {
                     secretaryActivities();
             }
 
-           if (userName.equalsIgnoreCase("exit"))
-                break;
-            else
-            logger.log(Level.INFO,"The username or password is incorrect. Please try again...\n");
-        }
+            if (userName.equalsIgnoreCase("exit")) {
 
+                break;
+            } else {
+                logger.log(Level.INFO, "The username or password is incorrect. Please try again...\n");
+            }
+        }
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void adminActivities() {
