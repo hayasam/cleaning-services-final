@@ -8,6 +8,7 @@ import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
+import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 public class email {
@@ -62,15 +63,17 @@ public class email {
             message.setText("Your order Done you can take it thank you for using our service");
 
 
-            logger.log(Level.INFO,"sending...");
+            logger.log(Level.INFO, "sending...");
             // Send message
             Transport.send(message);
 
-            logger.log(Level.INFO,"Sent message successfully....");
+            logger.log(Level.INFO, "Sent message successfully....");
+        } catch (AddressException e) {
+            throw new RuntimeException(e);
+        } catch (MessagingException e) {
+            throw new RuntimeException(e);
         }
-        catch (MessagingException mex) {
-            // handle the exception
-            mex.printStackTrace();
-        }
+
+
     }
 }
