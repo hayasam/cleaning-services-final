@@ -122,7 +122,12 @@ public static void adminActivities() {
     final String customer = "customer";
     final String secretary = "secretary";
     while (true) {
-        String newUserName, newPassword, newRole, newPhone, newAddress, email;
+        String newUserName;
+        String newPassword;
+        String newRole;
+        String newPhone;
+        String newAddress;
+        String email;
         logger.log(Level.INFO, welcome + users.get(userIndex).userName + "\n");
         logger.log(Level.INFO, separate2 + "\n");
         logger.log(Level.INFO, "1. Add User");
