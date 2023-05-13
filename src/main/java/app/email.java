@@ -67,9 +67,10 @@ public class email {
             Transport.send(message);
 
             logger.log(Level.INFO,"Sent message successfully....");
-        } catch (MessagingException mex) {
-
         }
-
+        catch (MessagingException mex) {
+            // handle the exception
+            mex.printStackTrace();
+        }
     }
 }
