@@ -324,7 +324,7 @@ public class MainInterface {
                     }
 
 
-                    logger.log(Level.INFO,"\n","ACTION_2");
+                    logger.log(Level.INFO,ACTION_2);
                     index = scan.nextInt();
                     if (index > i || index < 1) {
 
@@ -451,7 +451,7 @@ public class MainInterface {
                     }
 
 
-                    logger.log(Level.INFO,"\n","ACTION_2");
+                    logger.log(Level.INFO,ACTION_2);
                     index = scan.nextInt();
                     if (index > i || index < 1) {
                         logger.log(Level.INFO,invalid+"\n");
@@ -495,7 +495,7 @@ public class MainInterface {
                     }
 
 
-                    logger.log(Level.INFO,"\n","ACTION_2");
+                    logger.log(Level.INFO,ACTION_2);
                     index = scan.nextInt();
                     if (index > i || index < 1) {
                         logger.log(Level.INFO,invalid+"\n");
