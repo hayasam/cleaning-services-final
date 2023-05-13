@@ -127,75 +127,68 @@ public class MainInterface {
             String newAddress;
             String email;
             logger.log(Level.INFO, welcome + users.get(userIndex).userName+"\n");
-            logger.log(Level.INFO,separate2+"\n");
+            logger.log(Level.INFO, separate2+"\n");
             logger.log(Level.INFO,"1. Add User");
             logger.log(Level.INFO,"2. Remove User");
             logger.log(Level.INFO,"3. Show Users");
             logger.log(Level.INFO,"4. Send email");
             logger.log(Level.INFO,"5. Sign Out");
-            logger.log(Level.INFO,selectOption+"\n");
+            logger.log(Level.INFO, selectOption+"\n");
             int select = scan.nextInt();
 
 
             switch (select) {
                 case 1:
                     scan.nextLine();
-                    logger.log(Level.INFO,"Enter Username:");
+                    logger.log(Level.INFO, "Enter Username:");
                     newUserName = scan.nextLine();
-                    logger.log(Level.INFO,"Enter Password:\n");
+                    logger.log(Level.INFO, "Enter Password:\n");
                     newPassword = scan.nextLine();
-
-                    logger.log(Level.INFO,"Enter Phone:");
+                    logger.log(Level.INFO, "Enter Phone:");
                     newPhone = scan.nextLine();
-                    logger.log(Level.INFO,"Enter Address:");
+                    logger.log(Level.INFO, "Enter Address:");
                     newAddress = scan.nextLine();
-
-                    logger.log(Level.INFO,"Enter Role:\n");
+                    logger.log(Level.INFO, "Enter Role:\n");
                     newRole = scan.nextLine();
-                    if (newRole.equalsIgnoreCase(admin))
-                        users.add(new Admin(newUserName, newPassword,newPhone,newAddress, newRole));
-                    else if (newRole.equalsIgnoreCase(worker))
-                        users.add(new Worker(newUserName, newPassword,newPhone,newAddress, newRole));
-                    else if (newRole.equalsIgnoreCase(customer))
-                        users.add(new Customer(newUserName, newPassword,newPhone,newAddress, newRole));
-                    else if (newRole.equalsIgnoreCase(secretary))
-                        users.add(new Secretary(newUserName, newPassword,newPhone,newAddress, newRole));
+
+                    if (newRole.equalsIgnoreCase(admin)) {
+                        users.add(new Admin(newUserName, newPassword, newPhone, newAddress, newRole));
+                    } else if (newRole.equalsIgnoreCase(worker)) {
+                        users.add(new Worker(newUserName, newPassword, newPhone, newAddress, newRole));
+                    } else if (newRole.equalsIgnoreCase(customer)) {
+                        users.add(new Customer(newUserName, newPassword, newPhone, newAddress, newRole));
+                    } else if (newRole.equalsIgnoreCase(secretary)) {
+                        users.add(new Secretary(newUserName, newPassword, newPhone, newAddress, newRole));
+                    }
                     logger.log(Level.INFO, done);
                     break;
 
-                case 2:
-                    logger.log(Level.INFO,"Users List:\n");
 
-                    logger.log(Level.INFO,separate2);
+                case 2:
+                    logger.log(Level.INFO, "Users List:\n");
+                    logger.log(Level.INFO, separate2);
                     i = 1;
                     for (Users user : users) {
-                        logger.log(Level.INFO,i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone+  "\t\t" + user.address +"\t\t" + user.role);
+                        logger.log(Level.INFO, i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
                     }
-
-                    logger.log(Level.INFO,"\nPlease select a user:");
+                    logger.log(Level.INFO, "\nPlease select a user:");
                     index = scan.nextInt();
                     if (index > i || index < 1) {
-
-                        logger.log(Level.INFO,invalid);
+                        logger.log(Level.INFO, invalid);
                         break;
                     }
                     index--;
                     users.remove(index);
-
-
                     logger.log(Level.INFO, done);
                     break;
 
                 case 3:
-
-                    logger.log(Level.INFO,"Users List:\n");
-                    logger.log(Level.INFO,separate2);
-
+                    logger.log(Level.INFO, "Users List:\n");
+                    logger.log(Level.INFO, separate2);
                     i = 1;
                     for (Users user : users) {
-                        logger.log(Level.INFO,i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone+ "\t\t" + user.address+ "\t\t" + user.role);
+                        logger.log(Level.INFO, i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
                     }
-
                     break;
 
                 case 4:
