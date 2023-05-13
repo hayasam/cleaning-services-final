@@ -129,13 +129,13 @@ public static void adminActivities() {
         String newAddress;
         String email;
         logger.log(Level.INFO, () -> welcome + users.get(userIndex).userName + "\n");
-        logger.log(Level.INFO, "------------------------------------\n", separate2);
+        logger.log(Level.INFO, separate2);
         logger.log(Level.INFO, "1. Add User");
         logger.log(Level.INFO, "2. Remove User");
         logger.log(Level.INFO, "3. Show Users");
         logger.log(Level.INFO, "4. Send email");
         logger.log(Level.INFO, "5. Sign Out");
-        logger.log(Level.INFO, "------------------------------------\n", selectOption);
+        logger.log(Level.INFO, selectOption);
         int select = scan.nextInt();
 
         switch (select) {
@@ -181,7 +181,9 @@ public static void adminActivities() {
                 logger.log(Level.INFO, separate2);
                 int i = 1;
                 for (Users user : users) {
-                    logger.log(Level.INFO, String.format("%d. %s\t\t%s\t\t%s\t\t%s\t\t%s", i++, user.userName, user.password, user.phone, user.address, user.role) + "\n");
+                    String userString = String.format("%d. %s\t\t%s\t\t%s\t\t%s\t\t%s%n",
+                            i++, user.userName, user.password, user.phone, user.address, user.role);
+                    logger.log(Level.INFO, userString);
                 }
                 logger.log(Level.INFO, "\nPlease select a user:");
                 int index = scan.nextInt();
@@ -198,7 +200,9 @@ public static void adminActivities() {
                 logger.log(Level.INFO, separate2);
                 int j = 1;
                 for (Users user : users) {
-                    logger.log(Level.INFO, String.format("%d. %s\t\t%s\t\t%s\t\t%s\t\t%s", j++, user.userName, user.password, user.phone, user.address, user.role) + "\n");
+                    String userString = String.format("%d. %s\t\t%s\t\t%s\t\t%s\t\t%sA%n",
+                            j++, user.userName, user.password, user.phone, user.address, user.role);
+                    logger.log(Level.INFO, userString);
                 }
                 break;
 
@@ -228,7 +232,8 @@ public static void adminActivities() {
             int index;
             ArrayList<Integer> appIndex = new ArrayList<>();
 
-            logger.log(Level.INFO,"\t\t\tWelcome W. " + users.get(userIndex).userName+"\n");
+            String welcomeMessage = String.format("\t\t\tWelcome W. %s%n", users.get(userIndex).userName);
+            logger.log(Level.INFO, welcomeMessage);
 
             logger.log(Level.INFO, separate );
             logger.log(Level.INFO,"1. Show Customers List");
@@ -248,7 +253,9 @@ public static void adminActivities() {
                     appIndex.clear();
                     for (int j = 0; j < recorded.getCustomers().size(); j++)
                         if (recorded.getType().get(j) == 1) {
-                            logger.log(Level.INFO,i++ + ". " + recorded.getCustomers().get(j).userName);
+                            String customerName = recorded.getCustomers().get(j).userName;
+                            String logMessage = String.format("%d. %s%n", i++, customerName);
+                            logger.log(Level.INFO, logMessage);
                             appIndex.add(j);
                         }
                     if (appIndex.isEmpty()) {
@@ -276,7 +283,8 @@ public static void adminActivities() {
 
                 case 4:
 
-                    logger.log(Level.INFO,logOut+"\n");
+                    String logMessage = logOut + "\n";
+                    logger.log(Level.INFO, logMessage);
 
                     scan.nextLine();
                     return;
@@ -284,17 +292,15 @@ public static void adminActivities() {
                     i = 1;
 
 
-                    logger.log(Level.INFO,orderList+"\n");
+                    String logMesage = orderList + "\n" + separate2 + "\n";
+                    logger.log(Level.INFO, logMesage);
 
-                    logger.log(Level.INFO,separate2+"\n");
                     for (int j = 0; j < recorded.getOrders().size(); j++) {
 
-                        System.out.println(i++ + ". " + recorded.getOrders().get(j).getDay()+"/"+
-                                    recorded.getOrders().get(j).getMonth()+"/"+
-                                    recorded.getOrders().get(j).getYear()+" "+
-                                    recorded.getOrders().get(j).getTime()+"  "+
-                                    recorded.getOrders().get(j).getStatus()
-                                   );
+                        Order order = recorded.getOrders().get(j);
+                        String logMesssage = String.format("%d. %s/%s/%s %s %s", i++, order.getDay(), order.getMonth(), order.getYear(), order.getTime(), order.getStatus());
+                        System.out.println(logMesssage);
+
 
 
                     }
@@ -304,7 +310,7 @@ public static void adminActivities() {
 
                 default:
 
-                    logger.log(Level.INFO,invalid+"\n");
+                    logger.log(Level.INFO, String.format("%s%n", invalid));
 
                     break;
 
