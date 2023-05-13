@@ -128,14 +128,14 @@ public static void adminActivities() {
         String newPhone;
         String newAddress;
         String email;
-        logger.log(Level.INFO, welcome + users.get(userIndex).userName + "\n");
-        logger.log(Level.INFO, separate2 + "\n");
+        logger.log(Level.INFO, () -> welcome + users.get(userIndex).userName + "\n");
+        logger.log(Level.INFO, "------------------------------------\n", separate2);
         logger.log(Level.INFO, "1. Add User");
         logger.log(Level.INFO, "2. Remove User");
         logger.log(Level.INFO, "3. Show Users");
         logger.log(Level.INFO, "4. Send email");
         logger.log(Level.INFO, "5. Sign Out");
-        logger.log(Level.INFO, selectOption + "\n");
+        logger.log(Level.INFO, "------------------------------------\n", selectOption);
         int select = scan.nextInt();
 
         switch (select) {
@@ -181,7 +181,7 @@ public static void adminActivities() {
                 logger.log(Level.INFO, separate2);
                 int i = 1;
                 for (Users user : users) {
-                    logger.log(Level.INFO, i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
+                    logger.log(Level.INFO, String.format("%d. %s\t\t%s\t\t%s\t\t%s\t\t%s", i++, user.userName, user.password, user.phone, user.address, user.role) + "\n");
                 }
                 logger.log(Level.INFO, "\nPlease select a user:");
                 int index = scan.nextInt();
@@ -198,7 +198,7 @@ public static void adminActivities() {
                 logger.log(Level.INFO, separate2);
                 int j = 1;
                 for (Users user : users) {
-                    logger.log(Level.INFO, j++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
+                    logger.log(Level.INFO, String.format("%d. %s\t\t%s\t\t%s\t\t%s\t\t%s", j++, user.userName, user.password, user.phone, user.address, user.role) + "\n");
                 }
                 break;
 
@@ -228,14 +228,14 @@ public static void adminActivities() {
             int index;
             ArrayList<Integer> appIndex = new ArrayList<>();
 
-            logger.log(Level.INFO,"\t\t\tWelcome W. " + users.get(userIndex).userName+"\n");
+            logger.log(Level.INFO, "\t\t\tWelcome W. %s\n", users.get(userIndex).userName);
 
-            logger.log(Level.INFO,separate+"\n");
+            logger.log(Level.INFO, "================================================================================\n", separate);
             logger.log(Level.INFO,"1. Show Customers List");
             logger.log(Level.INFO,"2. Show Order");
             logger.log(Level.INFO,"3. Change Order Status");
             logger.log(Level.INFO,"4. Sign Out");
-            logger.log(Level.INFO,selectOption+"\n");
+            logger.log(Level.INFO, String.format("%s%n", selectOption));
             int select = scan.nextInt();
 
 
@@ -243,7 +243,7 @@ public static void adminActivities() {
                 case 1:
 
                     logger.log(Level.INFO,"Customers List:\n");
-                    logger.log(Level.INFO,separate2+"\n");
+                    logger.log(Level.INFO, String.format("%s%n", separate2));
                     i = 1;
                     appIndex.clear();
                     for (int j = 0; j < recorded.getCustomers().size(); j++)
