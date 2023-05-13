@@ -11,8 +11,8 @@ import javax.mail.Transport;
 
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-public class email {
-    static Logger logger = Logger.getLogger(email.class.getName());
+public class Email {
+    static Logger logger = Logger.getLogger(Email.class.getName());
     public void send() {
         // Recipient's email ID needs to be mentioned.
         String to = "mohammedadwan44@gmail.com";
