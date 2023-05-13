@@ -116,105 +116,106 @@ public class MainInterface {
         }
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public static void adminActivities() {
-        while (true) {
-            int i;
-            int index;
-            String newUserName;
-            String newPassword;
-            String newRole;
-            String newPhone;
-            String newAddress;
-            String email;
-            logger.log(Level.INFO, welcome + users.get(userIndex).userName+"\n");
-            logger.log(Level.INFO, separate2+"\n");
-            logger.log(Level.INFO,"1. Add User");
-            logger.log(Level.INFO,"2. Remove User");
-            logger.log(Level.INFO,"3. Show Users");
-            logger.log(Level.INFO,"4. Send email");
-            logger.log(Level.INFO,"5. Sign Out");
-            logger.log(Level.INFO, selectOption+"\n");
-            int select = scan.nextInt();
+public static void adminActivities() {
+    final String admin = "admin";
+    final String worker = "worker";
+    final String customer = "customer";
+    final String secretary = "secretary";
+    while (true) {
+        String newUserName, newPassword, newRole, newPhone, newAddress, email;
+        logger.log(Level.INFO, welcome + users.get(userIndex).userName + "\n");
+        logger.log(Level.INFO, separate2 + "\n");
+        logger.log(Level.INFO, "1. Add User");
+        logger.log(Level.INFO, "2. Remove User");
+        logger.log(Level.INFO, "3. Show Users");
+        logger.log(Level.INFO, "4. Send email");
+        logger.log(Level.INFO, "5. Sign Out");
+        logger.log(Level.INFO, selectOption + "\n");
+        int select = scan.nextInt();
 
+        switch (select) {
+            case 1:
+                scan.nextLine();
+                logger.log(Level.INFO, "Enter Username:");
+                newUserName = scan.nextLine();
+                logger.log(Level.INFO, "Enter Password:\n");
+                newPassword = scan.nextLine();
+                logger.log(Level.INFO, "Enter Phone:");
+                newPhone = scan.nextLine();
+                logger.log(Level.INFO, "Enter Address:");
+                newAddress = scan.nextLine();
+                logger.log(Level.INFO, "Enter Role:\n");
+                newRole = scan.nextLine();
 
-            switch (select) {
-                case 1:
-                    scan.nextLine();
-                    logger.log(Level.INFO, "Enter Username:");
-                    newUserName = scan.nextLine();
-                    logger.log(Level.INFO, "Enter Password:\n");
-                    newPassword = scan.nextLine();
-                    logger.log(Level.INFO, "Enter Phone:");
-                    newPhone = scan.nextLine();
-                    logger.log(Level.INFO, "Enter Address:");
-                    newAddress = scan.nextLine();
-                    logger.log(Level.INFO, "Enter Role:\n");
-                    newRole = scan.nextLine();
-
-                    if (newRole.equalsIgnoreCase(admin)) {
+                String invalidRole = "Invalid role, please try again.";
+                switch (newRole.toLowerCase()) {
+                    case admin:
                         users.add(new Admin(newUserName, newPassword, newPhone, newAddress, newRole));
-                    } else if (newRole.equalsIgnoreCase(worker)) {
-                        users.add(new Worker(newUserName, newPassword, newPhone, newAddress, newRole));
-                    } else if (newRole.equalsIgnoreCase(customer)) {
-                        users.add(new Customer(newUserName, newPassword, newPhone, newAddress, newRole));
-                    } else if (newRole.equalsIgnoreCase(secretary)) {
-                        users.add(new Secretary(newUserName, newPassword, newPhone, newAddress, newRole));
-                    }
-                    logger.log(Level.INFO, done);
-                    break;
-
-
-                case 2:
-                    logger.log(Level.INFO, "Users List:\n");
-                    logger.log(Level.INFO, separate2);
-                    i = 1;
-                    for (Users user : users) {
-                        logger.log(Level.INFO, i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
-                    }
-                    logger.log(Level.INFO, "\nPlease select a user:");
-                    index = scan.nextInt();
-                    if (index > i || index < 1) {
-                        logger.log(Level.INFO, invalid);
+                        logger.log(Level.INFO, done);
                         break;
-                    }
-                    index--;
-                    users.remove(index);
-                    logger.log(Level.INFO, done);
+                    case worker:
+                        users.add(new Worker(newUserName, newPassword, newPhone, newAddress, newRole));
+                        logger.log(Level.INFO, done);
+                        break;
+                    case customer:
+                        users.add(new Customer(newUserName, newPassword, newPhone, newAddress, newRole));
+                        logger.log(Level.INFO, done);
+                        break;
+                    case secretary:
+                        users.add(new Secretary(newUserName, newPassword, newPhone, newAddress, newRole));
+                        logger.log(Level.INFO, done);
+                        break;
+                    default:
+                        logger.log(Level.INFO, invalidRole);
+                        break;
+                }
+                break;
+
+            case 2:
+                logger.log(Level.INFO, "Users List:\n");
+                logger.log(Level.INFO, separate2);
+                int i = 1;
+                for (Users user : users) {
+                    logger.log(Level.INFO, i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
+                }
+                logger.log(Level.INFO, "\nPlease select a user:");
+                int index = scan.nextInt();
+                if (index > i || index < 1) {
+                    logger.log(Level.INFO, invalid);
                     break;
+                }
+                users.remove(index - 1);
+                logger.log(Level.INFO, done);
+                break;
 
-                case 3:
-                    logger.log(Level.INFO, "Users List:\n");
-                    logger.log(Level.INFO, separate2);
-                    i = 1;
-                    for (Users user : users) {
-                        logger.log(Level.INFO, i++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
-                    }
-                    break;
+            case 3:
+                logger.log(Level.INFO, "Users List:\n");
+                logger.log(Level.INFO, separate2);
+                int j = 1;
+                for (Users user : users) {
+                    logger.log(Level.INFO, j++ + ". " + user.userName + "\t\t" + user.password + "\t\t" + user.phone + "\t\t" + user.address + "\t\t" + user.role);
+                }
+                break;
 
-                case 4:
-                   MainInterface.email.add(0,"");
+            case 4:
+                MainInterface.email.add(0, "");
 
-                    logger.log(Level.INFO,"Please write you email here :");
-                    email = scan.next();
-                    		MainInterface.email.add(0,email);
+                logger.log(Level.INFO, "Please write your email here:");
+                email = scan.next();
+                MainInterface.email.add(0, email);
 
-                    break;
-                case 5:
+                break;
+            case 5:
+                logger.log(Level.INFO, logOut);
+                scan.nextLine();
+                return;
 
-                    logger.log(Level.INFO,logOut);
-                    scan.nextLine();
-                    return;
-
-                default:
-
-                    logger.log(Level.INFO,invalid);
-
-
-
-                    break;
-            }
+            default:
+                logger.log(Level.INFO, invalid);
+                break;
         }
     }
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void workerActivities() {
         while (true) {
