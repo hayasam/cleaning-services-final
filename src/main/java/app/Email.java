@@ -34,7 +34,7 @@ public class Email {
 
         // Get the Session object.// and pass username and password
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
-
+            @Override
             protected PasswordAuthentication getPasswordAuthentication() {
 
                 return new PasswordAuthentication("mohammedadwan44@gmail.com", "******");
