@@ -299,7 +299,7 @@ public static void adminActivities() {
 
                         Order order = recorded.getOrders().get(j);
                         String logMesssage = String.format("%d. %s/%s/%s %s %s", i++, order.getDay(), order.getMonth(), order.getYear(), order.getTime(), order.getStatus());
-                        System.out.println(logMesssage);
+                        logger.log(Level.INFO, logMesssage);
 
 
 
@@ -310,7 +310,7 @@ public static void adminActivities() {
 
                 default:
 
-                    logger.log(Level.INFO, String.format("%s%n", invalid));
+                    logger.log(Level.INFO, invalid + "\n");
 
                     break;
 
