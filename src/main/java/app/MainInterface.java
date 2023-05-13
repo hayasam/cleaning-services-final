@@ -230,12 +230,12 @@ public static void adminActivities() {
 
             logger.log(Level.INFO,"\t\t\tWelcome W. " + users.get(userIndex).userName+"\n");
 
-            logger.log(Level.INFO,separate+"\n");
+            logger.log(Level.INFO, separate );
             logger.log(Level.INFO,"1. Show Customers List");
             logger.log(Level.INFO,"2. Show Order");
             logger.log(Level.INFO,"3. Change Order Status");
             logger.log(Level.INFO,"4. Sign Out");
-            logger.log(Level.INFO,selectOption+"\n");
+            logger.log(Level.INFO, selectOption );
             int select = scan.nextInt();
 
 
@@ -243,7 +243,7 @@ public static void adminActivities() {
                 case 1:
 
                     logger.log(Level.INFO,"Customers List:\n");
-                    logger.log(Level.INFO,separate2+"\n");
+                    logger.log(Level.INFO, separate2);
                     i = 1;
                     appIndex.clear();
                     for (int j = 0; j < recorded.getCustomers().size(); j++)
