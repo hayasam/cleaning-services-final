@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="209daf62-714a-403c-ae7f-dee4fbe5f6c9" name="Changes" comment="sonar">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_5_2023_10_27_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_5_2023_10_27_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/MainInterface.java" afterDir="false" />
     </list>
@@ -99,7 +101,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "two.files.diff.last.used.file": "C:/Users/ahmdq/IdeaProjects/rstG/src/test/java/Test1.java",
     "vue.rearranger.settings.migration": "true"
   },
@@ -367,7 +369,8 @@
       <workItem from="1683759655055" duration="7000" />
       <workItem from="1683815511647" duration="1380000" />
       <workItem from="1683816911122" duration="13472000" />
-      <workItem from="1683906251084" duration="3989000" />
+      <workItem from="1683906251084" duration="4589000" />
+      <workItem from="1684006155525" duration="1478000" />
     </task>
     <task id="LOCAL؜-٠٠٠٠١" summary="test">
       <created>1677948720062</created>
