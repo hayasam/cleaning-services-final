@@ -5,14 +5,14 @@ public class Order {
     private String month;
     private String year;
     private String time;
-    private String Status;
+    private String status;
 
-    public Order(String day, String month, String year, String time , String Status) {
+    public Order(String day, String month, String year, String time , String status) {
         this.day = day;
         this.month = month;
         this.year = year;
         this.time = time;
-        this.Status=Status;
+        this.status=status;
 
     }
 
@@ -32,7 +32,7 @@ public class Order {
         return time;
     }
     public String getStatus() {
-        return Status;
+        return status;
     }
 
     @Override
