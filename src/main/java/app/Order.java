@@ -40,7 +40,7 @@ public class Order {
         if  (!(o instanceof Order))
             return false;
         Order other = (Order) o;
-        return (this.day.equals(other.day) && this.month.equals(other.month) && this.year.equals(other.year) && this.time.equals(other.time)&& this.Status.equals(other.Status));
+        return (this.day.equals(other.day) && this.month.equals(other.month) && this.year.equals(other.year) && this.time.equals(other.time)&& this.status.equals(other.status));
     }
     @Override
     public int hashCode() {

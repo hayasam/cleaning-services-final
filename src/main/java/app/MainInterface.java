@@ -515,11 +515,11 @@ public static void adminActivities() {
                     if (validOrder)
 
                     logger.log(Level.INFO,"Delete Order Successfully.\n"+"\n");
-                    else
-                    logger.log(Level.INFO,error+"\n");
+                    else {
+                        logger.log(Level.INFO, error + "\n");
 
-                    break;
-
+                        break;
+                    }
                 case 6:
                     i = 1;
                     appIndex.clear();
